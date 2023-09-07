@@ -1,6 +1,6 @@
 
 [user]
-	nom = "Mouhammad Wagane Diouf"
+	name = "Mouhammad Wagane Diouf"
 	email = "dioufmouhammad@gmail.com"
-	textEditeur = "Vim"
-	nomUtilisateur = "Diouf10"
+	textEditor = "Vim"
+	username = "Diouf10"
