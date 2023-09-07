@@ -1,0 +1,9 @@
+
+
+alias ls="ls -a"
+alias ll="ls -l -a"
+alias c='clear'
+alias ..="cd .."
+alias ...="cd ..."
+
+alias grepc="grep --color=always"

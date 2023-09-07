@@ -1,0 +1,15 @@
+
+function md(){
+	mkdir -p "$@" && cd "$@" 
+}
+
+function fvim(){
+	touch -p "$@" && nvim "$@"
+}
+
+function mygrep(){
+	local pattern = "$1"
+	local file = "$2"
+
+	grep -i "$pattern" "$file"
+}
