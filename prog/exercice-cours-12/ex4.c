@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int Main(int argc, char *argv[]) {
-	if(argv != 2) {
+	if(argc != 2) {
 		printf("Erreur Argument manquant \n");
 		return 1;
 	}
