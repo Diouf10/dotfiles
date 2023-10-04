@@ -1,15 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int Main(int argc, char *argv[]()) {
-	if(argv < 2) {
+int Main(int argc, char *argv[]) {
+	if(argv != 2) {
 		printf("Erreur Argument manquant \n");
-		exit(1);
+		return 1;
 	}
 
-	char b[1000];
+	char mot[100];
+	strcpy(mot, argv[1]);
 
-	if(fprintf(stdin, "%s", b) != 0) {
-		printf()
+	char ligne[100];
+
+	fgets(ligne, sizeof(ligne), stdin);
+
+	if(strstr(ligne, mot) != NULL)
+	{
+		printf("Mot trouvé dans la ligne.\n");
+		return 0;
+	}
+	else
+	{
+		printf("Le mot n'a pas était trouvé.\n");
+		return 1;
 	}
 }

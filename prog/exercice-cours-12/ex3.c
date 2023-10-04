@@ -2,13 +2,13 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-	for(int i = 0; i <= argc; i++) {
-		while(fscanf(stdin, "%s", argv[i]) != EOF)
-		{
-			printf("%s", argv[i]);
-			fprintf(stderr, "%s", argv[i]);
-		}
+	char ligne[1000];
+
+	while(fgets(ligne, sizeof(ligne), stdin) != NULL) {
+		printf("%s", ligne);
+
+		fprintf(stderr,"%s", ligne);
 	}
-	exit(0);
+	return 0;
 		
 }
